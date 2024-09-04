@@ -71,6 +71,9 @@ for (let i = 0; i <= 5; i++) {
   playGame();
 }
 
+if (humanScore > computerScore) {console.log("human wins this game")}
+  else if (humanScore < computerScore) {console.log("computer wins this game")}
+  else if (humanScore === computerScore) {console.log("this game is a tie")}
 
 
 
