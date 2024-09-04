@@ -21,10 +21,17 @@ let humanScore = 0;
 let computerScore = 0;
 let roundWinner = "";
 
+function playGame () {
+
+
+
+
 function playRound (humanChoice, computerChoice) {
   if (humanChoice === computerChoice) {
     roundWinner = 'tie'
-    alert("tie")
+    alert("this round is a tie")
+    console.log("this round is a tie")
+    console.log(humanScore, computerScore, roundWinner);
   }
   if (
     (humanChoice === 'rock' && computerChoice === 'scissors') ||
@@ -34,6 +41,8 @@ function playRound (humanChoice, computerChoice) {
     humanScore++
     roundWinner = 'human'
     alert("human wins this round")
+    console.log("human wins this round")
+    console.log(humanScore, computerScore, roundWinner);
   }
   if (
     (computerChoice === 'rock' && humanChoice === 'scissors') ||
@@ -43,10 +52,11 @@ function playRound (humanChoice, computerChoice) {
     computerScore++
     roundWinner = 'computer'
     alert("computer wins this round")
+    console.log("computer wins this round")
+    console.log(humanScore, computerScore, roundWinner);
   }
   // your code here!
 }
-
 const humanChoice = getHumanChoice();
 const computerChoice = getComputerChoice();
 
@@ -55,6 +65,15 @@ console.log(humanChoice);
 
 
 playRound(humanChoice, computerChoice);
+  
+}
+for (let i = 0; i <= 5; i++) {
+  playGame();
+}
+
+
+
+
 
 
 
