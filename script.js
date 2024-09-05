@@ -67,7 +67,7 @@ console.log(humanChoice);
 playRound(humanChoice, computerChoice);
   
 }
-for (let i = 0; i <= 5; i++) {
+for (let i = 0; i < 5; i++) {
   playGame();
 }
 
