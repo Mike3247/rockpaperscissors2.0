@@ -1,5 +1,17 @@
 console.log("Hello World!");
 
+const rockButton = document.createElement("button");
+rockButton.appendChild(document.createTextNode("Rock"));
+document.body.appendChild(rockButton);
+
+const paperButton = document.createElement("button");
+paperButton.appendChild(document.createTextNode("Paper"));
+document.body.appendChild(paperButton);
+
+const scissorsButton = document.createElement("button");
+scissorsButton.appendChild(document.createTextNode("Scissors"));
+document.body.appendChild(scissorsButton);
+
 function getComputerChoice () {
   let randomNumber = Math.floor(Math.random() * 3)
   switch (randomNumber) {
@@ -67,9 +79,9 @@ console.log(humanChoice);
 playRound(humanChoice, computerChoice);
   
 }
-for (let i = 0; i < 5; i++) {
+
   playGame();
-}
+
 
 if (humanScore > computerScore) {console.log("human wins this game")}
   else if (humanScore < computerScore) {console.log("computer wins this game")}
